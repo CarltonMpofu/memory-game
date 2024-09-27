@@ -1,0 +1,227 @@
+:root 
+{
+    --dark-background-color: #1A2A4E; 
+    --light-background-color: #1E3A5F;
+    --light-blue-color: #a8c8e7;
+    --dark-blue-color: #4FA1D8;
+    --dark-green-color: #3CCF4E;
+    --light-green-color: #43d854;
+    --white-color: #FCFCFC;
+}
+  
+
+body
+{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--dark-background-color);
+}
+
+h1
+{
+    color: #FCFCFC;
+    font-size: 40px;
+    margin-bottom: 70px;
+    margin-top: 80px;
+}
+
+h2
+{
+    font-size: 32px;
+    margin: 12px 0;
+    
+}
+
+p
+{
+    color: #7191A5;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    max-width: 654px;
+}
+
+.card
+{
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-bottom: 75px;
+}
+
+.theme-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px
+}
+
+button
+{
+    background-color: var(--light-blue-color);
+    
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.highlighted 
+{
+    background-color: var(--light-background-color)
+}
+
+.player-button:hover
+{
+    background-color: var(--dark-blue-color)
+}
+
+
+
+h3.player-text
+{
+    font-size: 26px;
+    color: var(--white-color);
+    margin: 7px 0;
+}
+
+.player-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
+}
+
+.size-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px
+}
+
+.startGame-button
+{
+    width: 100%;
+    background-color: var(--dark-green-color);
+    border: none;
+    color: #FCFCFC;
+    margin-top: 35px;
+    border-radius: 35px;
+}
+
+.startGame-button:hover
+{
+    background-color: var(--light-green-color);
+}
+
+@media screen and (max-width: 653px) {
+
+    /* font-size: 17.5px;
+    margin: 10px 0; */
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    h3.player-text
+    {
+        font-size: 18px;
+        margin: 7px 0;
+    }
+
+    p
+    {
+        font-size: 18px;
+    }
+
+    .container
+    {
+        max-width: 92%;
+    }
+
+    .card {
+        padding: 18px 25px;
+        padding-bottom: 50px;
+    }
+
+    .theme-grid, .size-grid 
+    {
+        gap: 13px;
+    }
+
+    .player-grid 
+    {
+        gap: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 412px) {
+
+    h1
+    {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    h2
+    {
+        font-size: 17.5px;
+        margin: 10px 0;
+    }
+
+    p
+    {
+        font-size: 15px;
+    }
+
+    h3.player-text
+    {
+        font-size: 15px;
+        margin: 7px 0;
+    }
+    
+
+    .container
+    {
+        max-width: 327px;
+    }
+
+    .card 
+    {
+        
+        padding: 15px 23px;
+        
+        padding-bottom: 22px;
+    }
+
+    .theme-grid, .size-grid 
+    {
+        gap: 25px;
+    }
+
+    .player-grid 
+    {
+        gap: 17px;
+    }
+
+}
