@@ -65,7 +65,7 @@ function startGame()
   // console.log(selectedGridSize);
 
   // Build the game page URL with query parameters
-  const gameUrl = `game.html?theme=${selectedTheme}&gridSize=${selectedGridSize}&players=${selectedPlayers}`;
+  const gameUrl = `game?theme=${selectedTheme}&gridSize=${selectedGridSize}&players=${selectedPlayers}`;
 
   // Redirect to the game page
   window.location.href = gameUrl;
