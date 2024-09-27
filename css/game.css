@@ -36,13 +36,25 @@ h3
   margin: 3px 0;
 }
 
-/* .atkinson-hyperlegible-bold {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} */
+#loading-screen 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  z-index: 1000;
+}
 
-.top-grid {
+
+.top-grid 
+{
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -706,6 +718,16 @@ div#modal-player-3.mgn {
   {
     margin: 0 0;
     font-size: 24px;
+  }
+
+  .grid-container-6 .grid-item .icon
+  {
+    font-size: 25px;
+  }
+
+  .grid-container-4 .grid-item .icon
+  {
+    font-size: 35px;
   }
 
   .bottom-grid-4

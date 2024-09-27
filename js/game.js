@@ -22,8 +22,11 @@ let playerOneMoves = 0;
 let storedBestTime = 0;
 let storedBestMoves = 0;
 
-function getQueryParams() 
+async function getQueryParams() 
 {
+    document.getElementById('game-screen').style.display = 'none';
+    document.getElementById('loading-screen').style.display = 'flex';
+
     const urlParams = new URLSearchParams(window.location.search);
     const theme = urlParams.get('theme');
     const gridSize = urlParams.get('gridSize');
@@ -62,6 +65,10 @@ function getQueryParams()
     setPlayerGrid();
 
     startTimer();
+
+    await wait(500)
+    document.getElementById('loading-screen').style.display = 'none';
+    document.getElementById('game-screen').style.display = 'block';
 }
   
 
