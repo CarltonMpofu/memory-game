@@ -24,7 +24,7 @@ let storedBestMoves = 0;
 
 async function getQueryParams() 
 {
-    document.getElementById('game-screen').style.display = 'none';
+    // document.getElementById('game-screen').style.display = 'none';
     document.getElementById('loading-screen').style.display = 'flex';
 
     const urlParams = new URLSearchParams(window.location.search);
