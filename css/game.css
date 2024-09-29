@@ -36,6 +36,13 @@ h3
   margin: 3px 0;
 }
 
+footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #loading-screen 
 {
   position: fixed;
