@@ -171,6 +171,7 @@ h3
 .grid-container-4 .grid-item.gi-highlight, .grid-container-6 .grid-item.gi-highlight
 {
   background-color: var(--dark-green-color);
+  border-color: var(--dark-green-color);;
 }
 
 .match-animate
@@ -191,7 +192,7 @@ h3
 {
   
   background-color: var(--light-blue-color);
-  
+  border-color: var(--light-blue-color);;
   /* animation: fadeOut 0.8s ease-in-out; */
 }
 
