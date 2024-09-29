@@ -451,7 +451,12 @@ function changeTurns()
         nextPlayerButton.classList.add('gi-highlight');
 
         currentPlayeText.style.display = 'none';
-        nextPlayerText.style.display = 'block';
+        if (window.innerWidth > 621) 
+        {
+            console.log("Here");
+            nextPlayerText.style.display = 'block';
+        }
+       
 
         currentTurn = nextPlayerNumber;   
 
@@ -773,14 +778,14 @@ var btn = document.getElementById("openModalBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 /**************************************** One player timer ****************************************/ 
 
