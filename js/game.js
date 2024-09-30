@@ -487,6 +487,11 @@ function setupModal()
             break;
 
         case 2:
+            modalPlayer1.style.display = "grid";
+            modalPlayer2.style.display = "grid";
+            modalPlayer3.style.display = "none";
+            modalPlayer4.style.display = "none";
+            break;
         case 1:
             modalPlayer1.style.display = "grid";
             modalPlayer2.style.display = "grid";
@@ -563,16 +568,6 @@ async function checkGameOver()
                 
                 playerIdx++;
             }
-            
-            // Check if there's a tie or a single winner
-            // if (winners.length === 1) 
-            // {
-            //     console.log(`${winners[0]} wins with a score of ${highestScore}!`);     
-            // } 
-            // else 
-            // {
-            //     console.log(`It's a tie between ${winners.join(', ')} with a score of ${highestScore}!`);
-            // }
         }
         else
         {
@@ -616,11 +611,15 @@ async function checkGameOver()
 
                 playerModal1.classList.add('new');
                 localStorage.setItem('playerTime', totalSeconds.toString());
+
+                playerModal3.style.display = 'none';
             }
             else
             {
                 playerModal1.querySelector('p').textContent = `Best time`;
                 playerModal1.querySelector('h2').textContent = `${storedMinutes}:${storedSeconds}`;
+
+                playerModal3.style.display = 'grid';
             }
 
             // Best Moves
@@ -632,11 +631,15 @@ async function checkGameOver()
 
                 playerModal2.classList.add('new');
                 localStorage.setItem('playerMoves', playerOneMoves.toString());
+
+                playerModal4.style.display = 'none';
             }
             else
             {
                 playerModal2.querySelector('p').textContent = `Best moves`;
                 playerModal2.querySelector('h2').textContent = `${storedBestMoves} Moves`;
+
+                playerModal4.style.display = 'grid';
             }
         }
 
